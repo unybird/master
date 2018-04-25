@@ -1,0 +1,1380 @@
+# GNU Make 4.2.1
+# Construit pour x86_64-unknown-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# Licence GPLv3+ : GNU GPL version 3 ou ultérieure <http://gnu.org/licenses/gpl.html>
+# Ceci est un logiciel libre : vous êtes autorisé à le modifier et à la redistribuer.
+# Il ne comporte AUCUNE GARANTIE, dans la mesure de ce que permet la loi.
+
+# Base de données de Make, imprimée le Wed Apr 25 15:47:37 2018
+
+# Variables
+
+# automatique
+<D = $(patsubst %/,%,$(dir $<))
+# automatique
+?F = $(notdir $?)
+# environnement
+PAPERSIZE = a4
+# environnement
+DESKTOP_SESSION = cinnamon
+# défaut
+.SHELLFLAGS := -c
+# environnement
+_VIRTUALENVWRAPPER_API =  mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv wipeenv allvirtualenv
+# environnement
+XDG_SESSION_TYPE = x11
+# défaut
+CWEAVE = cweave
+# automatique
+?D = $(patsubst %/,%,$(dir $?))
+# environnement
+CSF_STEPDefaults = /usr/share/opencascade/resources/XSTEPResource
+# environnement
+XAUTHORITY = /home/alexis/.Xauthority
+# environnement
+GDMSESSION = cinnamon
+# environnement
+HG = /usr/bin/hg
+# makefile
+CURDIR := /home/alexis/enseignement/se203/2018/juliette.guilloton/Makefiles/exemple_live
+# makefile
+SHELL = /bin/sh
+# défaut
+RM = rm -f
+# environnement
+GDM_LANG = en_US.utf8
+# environnement
+VTE_VERSION = 5201
+# environnement
+CSF_XmlOcafResource = /usr/share/opencascade/resources/XmlOcafResource
+# défaut
+PREPROCESS.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -F
+# défaut
+LINK.m = $(OBJC) $(OBJCFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# défaut
+LINK.o = $(CC) $(LDFLAGS) $(TARGET_ARCH)
+# défaut
+OUTPUT_OPTION = -o $@
+# environnement
+GTK_OVERLAY_SCROLLING = 1
+# défaut
+COMPILE.cpp = $(COMPILE.cc)
+# makefile (depuis « /dev/null », ligne 1)
+MAKEFILE_LIST :=  /dev/null
+# automatique
+@D = $(patsubst %/,%,$(dir $@))
+# automatique
+@F = $(notdir $@)
+# directive « override »
+GNUMAKEFLAGS := 
+# défaut
+LINK.p = $(PC) $(PFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# environnement
+MAKELEVEL := 0
+# environnement
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# défaut
+CC = cc
+# environnement
+_ = /usr/bin/make
+# défaut
+CHECKOUT,v = +$(if $(wildcard $@),,$(CO) $(COFLAGS) $< $@)
+# environnement
+QUARTUS131 = quartus_sh
+# environnement
+LC_NAME = fr_FR.UTF-8
+# défaut
+CPP = $(CC) -E
+# défaut
+LINK.cc = $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# environnement
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+# défaut
+MAKE_HOST := x86_64-unknown-linux-gnu
+# environnement
+PATH = /opt/logic:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/opt/cuda/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/alexis/Recherche/soclib/soclib/bin:/home/alexis/Recherche/soclib/soclib/utils/bin:/opt/tools_mipsel/bin:/opt/tools_sparc/bin:/opt/tools_arm/bin:/opt/altera/current/quartus/bin:/opt/modelsim/modeltech/bin:/opt/flexlm:/opt/android-sdk-linux/platform-tools:/opt/saleae/:/opt/WaveDromEditor/linux64:/opt/pycharm-4.0.4/bin:/opt/git-stree:/opt/bustle-0.5.4-x86_64:/opt/xtensa-esp32-elf/bin
+# environnement
+LM_LICENSE_FILE = @flexlm.comelec.enst.fr
+# défaut
+LD = ld
+# défaut
+TEXI2DVI = texi2dvi
+# environnement
+CSF_TObjMessage = /usr/share/opencascade/resources/TObj
+# environnement
+CSF_StandardLiteDefaults = /usr/share/opencascade/resources/StdResource
+# environnement
+GJS_DEBUG_OUTPUT = stderr
+# environnement
+SESSION_MANAGER = local/plop:@/tmp/.ICE-unix/640,unix/plop:/tmp/.ICE-unix/640
+# environnement
+CASROOT = /usr
+# défaut
+COMPILE.mod = $(M2C) $(M2FLAGS) $(MODFLAGS) $(TARGET_ARCH)
+# environnement
+XDG_RUNTIME_DIR = /run/user/1000
+# environnement
+PIP_VIRTUALENV_BASE = /home/alexis/.virtualenvs
+# défaut
+ARFLAGS = rv
+# automatique
+%D = $(patsubst %/,%,$(dir $%))
+# défaut
+LINK.r = $(FC) $(FFLAGS) $(RFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# défaut
+LINT = lint
+# défaut
+COMPILE.f = $(FC) $(FFLAGS) $(TARGET_ARCH) -c
+# défaut
+LINT.c = $(LINT) $(LINTFLAGS) $(CPPFLAGS) $(TARGET_ARCH)
+# défaut
+YACC.m = $(YACC) $(YFLAGS)
+# environnement
+MMGT_CLEAR = 1
+# défaut
+YACC.y = $(YACC) $(YFLAGS)
+# défaut
+AR = ar
+# environnement
+PIP_RESPECT_VIRTUALENV = true
+# environnement
+LC_NUMERIC = fr_FR.UTF-8
+# défaut
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink guile load
+# défaut
+TANGLE = tangle
+# environnement
+CSF_OCCTResourcePath = /usr/share/opencascade/resources
+# environnement
+XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/alexis
+# environnement
+LS_COLORS = di=34;4:ln=35;4:ex=31:*.rpm=32:*.gz=32:*.tar=32:*.tgz=32
+# environnement
+XDG_SESSION_DESKTOP = cinnamon
+# environnement
+SSH_AUTH_SOCK = /tmp/ssh-dUxaAVvgecCK/agent.1614
+# environnement
+CUPS_USER = polti
+# défaut
+GET = get
+# automatique
+%F = $(notdir $%)
+# environnement
+DISPLAY = :0
+# défaut
+COMPILE.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# environnement
+CSF_PluginDefaults = /usr/share/opencascade/resources/StdResource
+# environnement
+no_proxy = localhost,127.0.0.0/8,::1
+# défaut
+CTANGLE = ctangle
+# environnement
+CSF_LANGUAGE = us
+# environnement
+CSF_MDTVTexturesDirectory = /usr/share/opencascade/resources/Textures
+# défaut
+.LIBPATTERNS = lib%.so lib%.a
+# défaut
+LINK.C = $(LINK.cc)
+# environnement
+PWD = /home/alexis/enseignement/se203/2018/juliette.guilloton/Makefiles/exemple_live
+# environnement
+QT_QPA_PLATFORMTHEME = qt5ct
+# environnement
+PROJECT_HOME = /home/alexis/Devel
+# défaut
+.LOADED := 
+# défaut
+LINK.S = $(CC) $(ASFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_MACH)
+# environnement
+ANT_HOME = /usr/share/apache-ant
+# environnement
+XDG_SEAT = seat0
+# défaut
+PREPROCESS.r = $(FC) $(FFLAGS) $(RFLAGS) $(TARGET_ARCH) -F
+# environnement
+SSH_AGENT_PID = 1615
+# défaut
+LINK.c = $(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# environnement
+GTK_MODULES = canberra-gtk-module
+# défaut
+LINK.s = $(CC) $(ASFLAGS) $(LDFLAGS) $(TARGET_MACH)
+# environnement
+HOME = /home/alexis
+# environnement
+CSF_MIGRATION_TYPES = /usr/share/opencascade/resources/StdResource/MigrationSheet.txt
+# environnement
+LOGNAME = alexis
+# automatique
++F = $(notdir $+)
+# défaut
+M2C = m2c
+# environnement
+TEXINPUTS = .:/home/alexis/.texinputs//:
+# environnement
+CSF_DrawPluginDefaults = /usr/share/opencascade/resources/DrawResources
+# environnement
+CSF_TObjDefaults = /usr/share/opencascade/resources/StdResource
+# environnement
+WORKON_HOME = /home/alexis/.virtualenvs
+# défaut
+MAKE_VERSION := 4.2.1
+# environnement
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatique
+^D = $(patsubst %/,%,$(dir $^))
+# environnement
+XDG_VTNR = 7
+# environnement
+LC_TIME = fr_FR.UTF-8
+# environnement
+VIRTUALENVWRAPPER_SCRIPT = /usr/bin/virtualenvwrapper.sh
+# défaut
+COMPILE.m = $(OBJC) $(OBJCFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# environnement
+COLORTERM = truecolor
+# défaut
+MAKE = $(MAKE_COMMAND)
+# environnement
+SHLVL = 1
+# défaut
+AS = as
+# défaut
+PREPROCESS.S = $(CC) -E $(CPPFLAGS)
+# défaut
+MAKE_TERMERR := /dev/pts/1
+# défaut
+COMPILE.p = $(PC) $(PFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# environnement
+XDG_SESSION_ID = c2
+# environnement
+USER = alexis
+# défaut
+FC = f77
+# environnement
+LC_MONETARY = fr_FR.UTF-8
+# makefile
+.DEFAULT_GOAL := 
+# environnement
+XDG_CURRENT_DESKTOP = X-Cinnamon
+# environnement
+QT_SELECT = 5
+# environnement
+LC_TELEPHONE = fr_FR.UTF-8
+# défaut
+WEAVE = weave
+# défaut
+MAKE_COMMAND := make
+# défaut
+LINK.cpp = $(LINK.cc)
+# défaut
+F77 = $(FC)
+# environnement
+OLDPWD = /home/alexis/enseignement/se203/2018/juliette.guilloton/Makefiles/exemple_live
+# défaut
+.VARIABLES := 
+# défaut
+PC = pc
+# automatique
+*F = $(notdir $*)
+# environnement
+LANGUAGE = fr_FR
+# environnement
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# défaut
+COMPILE.def = $(M2C) $(M2FLAGS) $(DEFFLAGS) $(TARGET_ARCH)
+# environnement
+PYTHONPATH = /home/alexis/.site-packages:
+# défaut
+LEX = lex
+# makefile
+MAKEFLAGS = p -j7 --jobserver-auth=3,4
+# environnement
+MFLAGS = -p -j7 --jobserver-auth=3,4
+# automatique
+*D = $(patsubst %/,%,$(dir $*))
+# environnement
+MAIL = /var/spool/mail/alexis
+# environnement
+IDF_PATH = /home/alexis/esp/esp-idf
+# environnement
+QUARTUS_64BIT = 1
+# défaut
+LEX.l = $(LEX) $(LFLAGS) -t
+# défaut
+LEX.m = $(LEX) $(LFLAGS) -t
+# automatique
++D = $(patsubst %/,%,$(dir $+))
+# défaut
+COMPILE.r = $(FC) $(FFLAGS) $(RFLAGS) $(TARGET_ARCH) -c
+# environnement
+LC_PAPER = fr_FR.UTF-8
+# environnement
+NO_AT_BRIDGE = 1
+# environnement
+HTTP_PROXY = http://proxy.enst.fr:3128/
+# environnement
+CINNAMON_VERSION = 3.6.7
+# environnement
+CSF_IGESDefaults = /usr/share/opencascade/resources/XSTEPResource
+# environnement
+DRAWHOME = /usr/share/opencascade/resources/DrawResources
+# environnement
+PYTHONSTARTUP = /home/alexis/.pystartup
+# environnement
+SYSTEMC = /opt/systemc-2.2.0/
+# environnement
+DRAWDEFAULT = /usr/share/opencascade/resources/DrawResources/DrawDefault
+# défaut
+MAKEFILES := 
+# environnement
+CSF_XCAFDefaults = /usr/share/opencascade/resources/StdResource
+# défaut
+YACC = yacc
+# défaut
+COMPILE.cc = $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# automatique
+<F = $(notdir $<)
+# environnement
+https_proxy = http://proxy.enst.fr:3128/
+# défaut
+CXX = g++
+# environnement
+LC_MEASUREMENT = fr_FR.UTF-8
+# environnement
+CSF_EXCEPTION_PROMPT = 1
+# défaut
+COFLAGS = 
+# environnement
+EDITOR = nano -mw
+# environnement
+NO_PROXY = localhost,127.0.0.0/8,::1
+# défaut
+COMPILE.C = $(COMPILE.cc)
+# environnement
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environnement
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/952894e1_85af_458d_a5a6_3b1a7785996c
+# automatique
+^F = $(notdir $^)
+# défaut
+COMPILE.S = $(CC) $(ASFLAGS) $(CPPFLAGS) $(TARGET_MACH) -c
+# défaut
+LINK.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# environnement
+HTTPS_PROXY = http://proxy.enst.fr:3128/
+# environnement
+GNOME_TERMINAL_SERVICE = :1.95
+# défaut
+SUFFIXES := .out .a .ln .o .c .cc .C .cpp .p .f .F .m .r .y .l .ym .yl .s .S .mod .sym .def .h .info .dvi .tex .texinfo .texi .txinfo .w .ch .web .sh .elc .el
+# défaut
+COMPILE.c = $(CC) $(CFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# environnement
+CSF_XSMessage = /usr/share/opencascade/resources/XSMessage
+# défaut
+COMPILE.s = $(AS) $(ASFLAGS) $(TARGET_MACH)
+# environnement
+MOZ_PLUGIN_PATH = /usr/lib/mozilla/plugins
+# défaut
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environnement
+LC_IDENTIFICATION = fr_FR.UTF-8
+# défaut
+.RECIPEPREFIX := 
+# défaut
+MAKEINFO = makeinfo
+# environnement
+http_proxy = http://proxy.enst.fr:3128/
+# défaut
+OBJC = cc
+# environnement
+LC_ADDRESS = fr_FR.UTF-8
+# défaut
+TEX = tex
+# environnement
+CSF_SHMessage = /usr/share/opencascade/resources/SHMessage
+# environnement
+SOCLIB = /home/alexis/Recherche/soclib/soclib
+# environnement
+LANG = fr_FR.UTF-8
+# environnement
+TERM = xterm-256color
+# défaut
+F77FLAGS = $(FFLAGS)
+# défaut
+LINK.f = $(FC) $(FFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# défaut
+CO = co
+# environnement
+CSF_StandardDefaults = /usr/share/opencascade/resources/StdResource
+# environnement
+CSF_ShadersDirectory = /usr/share/opencascade/resources/Shaders
+# stats des tables de hachage de la variable « set » :
+# Charge=201/1024=20%, Rehash=0, Collisions=32/227=14%
+
+# Valeurs de variable spécifiques au motif
+
+# pas de valeurs de variable spécifiques au motif
+
+# Répertoires
+
+# SCCS: « stat » impossible.
+# /dev (périphérique 6, inode 1025) : 178 fichier(s), 19 impossibilité(s).
+# /dev/SCCS: « stat » impossible.
+# /dev/RCS: « stat » impossible.
+# RCS: « stat » impossible.
+
+# 178 fichier(s), 19 impossibilités dans 5 répertoires.
+
+# Règles implicites
+
+%.out:
+
+%.a:
+
+%.ln:
+
+%.o:
+
+%: %.o
+#  recette à exécuter (commande interne) :
+	$(LINK.o) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.c:
+
+%: %.c
+#  recette à exécuter (commande interne) :
+	$(LINK.c) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.ln: %.c
+#  recette à exécuter (commande interne) :
+	$(LINT.c) -C$* $<
+
+%.o: %.c
+#  recette à exécuter (commande interne) :
+	$(COMPILE.c) $(OUTPUT_OPTION) $<
+
+%.cc:
+
+%: %.cc
+#  recette à exécuter (commande interne) :
+	$(LINK.cc) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.cc
+#  recette à exécuter (commande interne) :
+	$(COMPILE.cc) $(OUTPUT_OPTION) $<
+
+%.C:
+
+%: %.C
+#  recette à exécuter (commande interne) :
+	$(LINK.C) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.C
+#  recette à exécuter (commande interne) :
+	$(COMPILE.C) $(OUTPUT_OPTION) $<
+
+%.cpp:
+
+%: %.cpp
+#  recette à exécuter (commande interne) :
+	$(LINK.cpp) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.cpp
+#  recette à exécuter (commande interne) :
+	$(COMPILE.cpp) $(OUTPUT_OPTION) $<
+
+%.p:
+
+%: %.p
+#  recette à exécuter (commande interne) :
+	$(LINK.p) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.p
+#  recette à exécuter (commande interne) :
+	$(COMPILE.p) $(OUTPUT_OPTION) $<
+
+%.f:
+
+%: %.f
+#  recette à exécuter (commande interne) :
+	$(LINK.f) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.f
+#  recette à exécuter (commande interne) :
+	$(COMPILE.f) $(OUTPUT_OPTION) $<
+
+%.F:
+
+%: %.F
+#  recette à exécuter (commande interne) :
+	$(LINK.F) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.F
+#  recette à exécuter (commande interne) :
+	$(COMPILE.F) $(OUTPUT_OPTION) $<
+
+%.f: %.F
+#  recette à exécuter (commande interne) :
+	$(PREPROCESS.F) $(OUTPUT_OPTION) $<
+
+%.m:
+
+%: %.m
+#  recette à exécuter (commande interne) :
+	$(LINK.m) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.m
+#  recette à exécuter (commande interne) :
+	$(COMPILE.m) $(OUTPUT_OPTION) $<
+
+%.r:
+
+%: %.r
+#  recette à exécuter (commande interne) :
+	$(LINK.r) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.r
+#  recette à exécuter (commande interne) :
+	$(COMPILE.r) $(OUTPUT_OPTION) $<
+
+%.f: %.r
+#  recette à exécuter (commande interne) :
+	$(PREPROCESS.r) $(OUTPUT_OPTION) $<
+
+%.y:
+
+%.ln: %.y
+#  recette à exécuter (commande interne) :
+	$(YACC.y) $< 
+	 $(LINT.c) -C$* y.tab.c 
+	 $(RM) y.tab.c
+
+%.c: %.y
+#  recette à exécuter (commande interne) :
+	$(YACC.y) $< 
+	 mv -f y.tab.c $@
+
+%.l:
+
+%.ln: %.l
+#  recette à exécuter (commande interne) :
+	@$(RM) $*.c
+	 $(LEX.l) $< > $*.c
+	$(LINT.c) -i $*.c -o $@
+	 $(RM) $*.c
+
+%.c: %.l
+#  recette à exécuter (commande interne) :
+	@$(RM) $@ 
+	 $(LEX.l) $< > $@
+
+%.r: %.l
+#  recette à exécuter (commande interne) :
+	$(LEX.l) $< > $@ 
+	 mv -f lex.yy.r $@
+
+%.ym:
+
+%.m: %.ym
+#  recette à exécuter (commande interne) :
+	$(YACC.m) $< 
+	 mv -f y.tab.c $@
+
+%.yl:
+
+%.s:
+
+%: %.s
+#  recette à exécuter (commande interne) :
+	$(LINK.s) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.s
+#  recette à exécuter (commande interne) :
+	$(COMPILE.s) -o $@ $<
+
+%.S:
+
+%: %.S
+#  recette à exécuter (commande interne) :
+	$(LINK.S) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.S
+#  recette à exécuter (commande interne) :
+	$(COMPILE.S) -o $@ $<
+
+%.s: %.S
+#  recette à exécuter (commande interne) :
+	$(PREPROCESS.S) $< > $@
+
+%.mod:
+
+%: %.mod
+#  recette à exécuter (commande interne) :
+	$(COMPILE.mod) -o $@ -e $@ $^
+
+%.o: %.mod
+#  recette à exécuter (commande interne) :
+	$(COMPILE.mod) -o $@ $<
+
+%.sym:
+
+%.def:
+
+%.sym: %.def
+#  recette à exécuter (commande interne) :
+	$(COMPILE.def) -o $@ $<
+
+%.h:
+
+%.info:
+
+%.dvi:
+
+%.tex:
+
+%.dvi: %.tex
+#  recette à exécuter (commande interne) :
+	$(TEX) $<
+
+%.texinfo:
+
+%.info: %.texinfo
+#  recette à exécuter (commande interne) :
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+%.dvi: %.texinfo
+#  recette à exécuter (commande interne) :
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+%.texi:
+
+%.info: %.texi
+#  recette à exécuter (commande interne) :
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+%.dvi: %.texi
+#  recette à exécuter (commande interne) :
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+%.txinfo:
+
+%.info: %.txinfo
+#  recette à exécuter (commande interne) :
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+%.dvi: %.txinfo
+#  recette à exécuter (commande interne) :
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+%.w:
+
+%.c: %.w
+#  recette à exécuter (commande interne) :
+	$(CTANGLE) $< - $@
+
+%.tex: %.w
+#  recette à exécuter (commande interne) :
+	$(CWEAVE) $< - $@
+
+%.ch:
+
+%.web:
+
+%.p: %.web
+#  recette à exécuter (commande interne) :
+	$(TANGLE) $<
+
+%.tex: %.web
+#  recette à exécuter (commande interne) :
+	$(WEAVE) $<
+
+%.sh:
+
+%: %.sh
+#  recette à exécuter (commande interne) :
+	cat $< >$@ 
+	 chmod a+x $@
+
+%.elc:
+
+%.el:
+
+(%): %
+#  recette à exécuter (commande interne) :
+	$(AR) $(ARFLAGS) $@ $<
+
+%.out: %
+#  recette à exécuter (commande interne) :
+	@rm -f $@ 
+	 cp $< $@
+
+%.c: %.w %.ch
+#  recette à exécuter (commande interne) :
+	$(CTANGLE) $^ $@
+
+%.tex: %.w %.ch
+#  recette à exécuter (commande interne) :
+	$(CWEAVE) $^ $@
+
+%:: %,v
+#  recette à exécuter (commande interne) :
+	$(CHECKOUT,v)
+
+%:: RCS/%,v
+#  recette à exécuter (commande interne) :
+	$(CHECKOUT,v)
+
+%:: RCS/%
+#  recette à exécuter (commande interne) :
+	$(CHECKOUT,v)
+
+%:: s.%
+#  recette à exécuter (commande interne) :
+	$(GET) $(GFLAGS) $(SCCS_OUTPUT_OPTION) $<
+
+%:: SCCS/s.%
+#  recette à exécuter (commande interne) :
+	$(GET) $(GFLAGS) $(SCCS_OUTPUT_OPTION) $<
+
+# 92 règles implicites, 5 (5,4%) terminal.
+
+# Fichiers
+
+# Pas une cible :
+.web.p:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(TANGLE) $<
+
+# Pas une cible :
+.l.r:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(LEX.l) $< > $@ 
+	 mv -f lex.yy.r $@
+
+# Pas une cible :
+.dvi:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+.ym:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+.f.o:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(COMPILE.f) $(OUTPUT_OPTION) $<
+
+# Pas une cible :
+.l:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+.m:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(LINK.m) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Pas une cible :
+.ln:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+.o:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(LINK.o) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Pas une cible :
+.y:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+.def.sym:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(COMPILE.def) -o $@ $<
+
+# Pas une cible :
+.p.o:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(COMPILE.p) $(OUTPUT_OPTION) $<
+
+# Pas une cible :
+.p:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(LINK.p) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Pas une cible :
+.txinfo.dvi:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+# Pas une cible :
+.a:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+.yl:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+.l.ln:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	@$(RM) $*.c
+	 $(LEX.l) $< > $*.c
+	$(LINT.c) -i $*.c -o $@
+	 $(RM) $*.c
+
+# Pas une cible :
+.F.o:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(COMPILE.F) $(OUTPUT_OPTION) $<
+
+# Pas une cible :
+.texi.info:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+# Pas une cible :
+.w.c:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(CTANGLE) $< - $@
+
+# Pas une cible :
+.texi.dvi:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+# Pas une cible :
+.ch:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+.m.o:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(COMPILE.m) $(OUTPUT_OPTION) $<
+
+# Pas une cible :
+.cc:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(LINK.cc) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Pas une cible :
+.cc.o:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(COMPILE.cc) $(OUTPUT_OPTION) $<
+
+# Pas une cible :
+.def:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+.SUFFIXES: .out .a .ln .o .c .cc .C .cpp .p .f .F .m .r .y .l .ym .yl .s .S .mod .sym .def .h .info .dvi .tex .texinfo .texi .txinfo .w .ch .web .sh .elc .el
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+.c.o:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(COMPILE.c) $(OUTPUT_OPTION) $<
+
+# Pas une cible :
+.r.o:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(COMPILE.r) $(OUTPUT_OPTION) $<
+
+# Pas une cible :
+.r:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(LINK.r) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Pas une cible :
+.ym.m:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(YACC.m) $< 
+	 mv -f y.tab.c $@
+
+# Pas une cible :
+.y.ln:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(YACC.y) $< 
+	 $(LINT.c) -C$* y.tab.c 
+	 $(RM) y.tab.c
+
+# Pas une cible :
+.elc:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+.l.c:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	@$(RM) $@ 
+	 $(LEX.l) $< > $@
+
+# Pas une cible :
+.out:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+.C:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(LINK.C) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Pas une cible :
+.r.f:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(PREPROCESS.r) $(OUTPUT_OPTION) $<
+
+# Pas une cible :
+.S:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(LINK.S) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Pas une cible :
+.texinfo.info:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+# Pas une cible :
+.c:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(LINK.c) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Pas une cible :
+.w.tex:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(CWEAVE) $< - $@
+
+# Pas une cible :
+.c.ln:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(LINT.c) -C$* $<
+
+# Pas une cible :
+.s.o:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(COMPILE.s) -o $@ $<
+
+# Pas une cible :
+.s:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(LINK.s) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Pas une cible :
+.texinfo.dvi:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+# Pas une cible :
+.el:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+.lm.m:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	@$(RM) $@ 
+	 $(LEX.m) $< > $@
+
+# Pas une cible :
+.y.c:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(YACC.y) $< 
+	 mv -f y.tab.c $@
+
+# Pas une cible :
+.web.tex:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(WEAVE) $<
+
+# Pas une cible :
+.texinfo:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+.DEFAULT:
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+.h:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+.tex.dvi:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(TEX) $<
+
+# Pas une cible :
+.cpp.o:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(COMPILE.cpp) $(OUTPUT_OPTION) $<
+
+# Pas une cible :
+.cpp:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(LINK.cpp) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Pas une cible :
+.C.o:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(COMPILE.C) $(OUTPUT_OPTION) $<
+
+# Pas une cible :
+.texi:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+.txinfo:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+.tex:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+/dev/null:
+#  La recherche de règle implicite a été effectuée.
+#  Dernière modification 2018-04-16 17:05:56.640056496
+#  Le fichier a été mis à jour.
+#  Mise à jour réussie.
+
+# Pas une cible :
+.txinfo.info:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+# Pas une cible :
+.sh:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	cat $< >$@ 
+	 chmod a+x $@
+
+# Pas une cible :
+.S.s:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(PREPROCESS.S) $< > $@
+
+# Pas une cible :
+.mod:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(COMPILE.mod) -o $@ -e $@ $^
+
+# Pas une cible :
+.mod.o:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(COMPILE.mod) -o $@ $<
+
+# Pas une cible :
+.F.f:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(PREPROCESS.F) $(OUTPUT_OPTION) $<
+
+# Pas une cible :
+.w:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+.S.o:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(COMPILE.S) -o $@ $<
+
+# Pas une cible :
+.F:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(LINK.F) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Pas une cible :
+.web:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+.sym:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# Pas une cible :
+.f:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+#  recette à exécuter (commande interne) :
+	$(LINK.f) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Pas une cible :
+.info:
+# Pas de règle interne
+#  La recherche de règle implicite n'a pas été effectuée.
+#  Heure de modification jamais vérifiée.
+#  Le fichier n'a pas été mis à jour.
+
+# stats des tables de hachage des fichiers :
+# Charge=73/1024=7%, Rehash=0, Collisions=396/1476=27%
+# Chemins de recherche VPATH
+
+# Aucun chemin de recherche « vpath ».
+
+# Aucun chemin de recherche général (variable « VPATH »).
+
+# strcache utilisé : 1 (0) / chaînes = 437 / espace = 3855 o / moy = 8 o
+# tampon courant : taille = 8162 o / utilisé = 3855 o / nombre = 437 / moy = 8 o
+
+# performance strcache : lookups = 606 / accès = 27%
+# stats des tables de hachage :
+# Charge=437/8192=5%, Rehash=0, Collisions=166/606=27%
+# Base de données de Make terminée le Wed Apr 25 15:47:37 2018
+
