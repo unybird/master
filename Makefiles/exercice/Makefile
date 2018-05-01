@@ -1,7 +1,7 @@
 CC = arm-none-eabi-gcc
 
 EXE=hello
-OBJS = main.o t1.o t2.o stubs.o
+OBJS = main.o t1.o t2.o stubs.ogit com
 
 all:$(EXE)
 
