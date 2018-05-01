@@ -22,4 +22,4 @@ main.o : main.c
 clean : 		
 	rm -f hello stubs.o t2.o t1.o main.o
 
-.PHONY : clean all
+.PHONY : clean allhihi
