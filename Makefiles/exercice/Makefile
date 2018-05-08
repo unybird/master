@@ -2,17 +2,19 @@ CC = arm-none-eabi-gcc
 
 EXE = hello
 OBJS = main.o t1.o t2.o stubs.o
-LOADLIBES =-L/opt/mylibs
-CFLAGS =-Wall -Werror -g -O2 -mthumb
-LDLIBS =-lm
+CFLAGS =-Wall -Werror -g -O2
+LDLIBS = -L/opt/mylibs -lm
+TARGET_ARCH = -mthumb
+vpath %.c = libs/
 
 all:$(EXE)
 
 $(EXE) : $(OBJS)
-	$(LINK.o) $(LOADLIBES) -mthumb $^ $(LDLIBS) -o $@
+	$(LINK.o) $^ $(LDLIBS) -o $@
 
-stubs.o : libs/stubs.c
-	$(CC) -g -O2 -mthumb -c -o $@ $^
+%.o : %.c %.h 
+
+stubs.o : CFLAGS = -g -O2
 
 clean : 		
 	rm -f hello stubs.o t2.o t1.o main.o
