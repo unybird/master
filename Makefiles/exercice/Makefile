@@ -1,11 +1,15 @@
 CC = arm-none-eabi-gcc
 
 EXE = hello
-OBJS = main.o t1.o t2.o stubs.o
+SOURCES = t1.c t2.c stubs.c
+OBJS = main.o $(SOURCES:%.c=%.o)
 CFLAGS =-Wall -Werror -g -O2
-LDLIBS = -L/opt/mylibs -lm
+LDFLAGS = -L/opt/mylibs
+LDLIBS = -lm
 TARGET_ARCH = -mthumb
 vpath %.c = libs/
+
+-include $(subst .c,.d,$(SOURCES))
 
 all:$(EXE)
 
@@ -17,6 +21,6 @@ $(EXE) : $(OBJS)
 stubs.o : CFLAGS = -g -O2
 
 clean : 		
-	rm -f hello stubs.o t2.o t1.o main.o
+	rm -f $(EXE) $(OBJS)
 
 .PHONY : clean all
